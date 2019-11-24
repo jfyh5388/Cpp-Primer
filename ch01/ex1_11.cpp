@@ -7,13 +7,14 @@ using std::cin;
 
 void print_range(int lo, int hi)
 {
+    int i = lo;
     if (lo > hi)
     {
         print_range(hi, lo);
         return;
     }
-    for (int i = lo; i != hi; ++i)
-        cout << i << " ";
+    while(i != hi)
+        cout << i++ << " ";
 }
 
 int main()
